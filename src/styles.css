@@ -1,1 +1,132 @@
+body {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 550px;
+}
+
+.container {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  height: max-content;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  border: 2px solid #aa67e0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0 10px 0;
+
+}
+
+button {
+  border-radius: 55%;
+  background-color: rgb(88, 86, 85);
+  color: #abc2e8;
+  border: 2px solid #78d0f3;
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  background-color: #c2d8fa;
+  color: #e1ebcf;
+  opacity: 1.5;
+}
+
+.col-3 {
+  padding: 90px;
+  max-height: 400px;
+}
+.currentWeather {
+  display: center;
+  width: 380px;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgba(219, 198, 235, 0.1);
+  color: darkslategrey;
+  font-family: sans-serif, cursive;
+  font-weight: 700;
+  transition: all 200ms ease-in-out;
+}
+
+.currentWeather:hover {
+  background-color: rgb(233, 200, 228);
+}
+
+h2 {
+  font-family: fantasy, cursive;
+  font-size: 35px;
+  color: darkslategrey;
+}
+h1 {
+  font-family: fantasy, cursive;
+  font-size: 60px;
+  color: darkslategrey;
+}
+
+.fa-sun {
+  font-size: 20px;
+  color: darkslategrey;
+}
+
+ul {
+  display: block;
+  margin: 0 auto;
+  float: left;
+  padding: 0px 10px;
+  max-width: fit-content;
+  border: 2px solid rgb(151, 36, 136);
+  border-radius: 10px;
+  font-family: sans-serif, cursive;
+  font-weight: 700;
+  font-size: 10px;
+  color: darkslategrey;
+  background-color: rgba(219, 198, 235, 0.1);
+  transition: all 200ms ease-in-out;
+}
+ul:hover {
+  background-color: rgb(233, 200, 228);
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ul .fas {
+  font-size: 20px;
+}
+
+.dateTime {
+  width: 250px;
+  border: 2px solid rgb(151, 36, 136);
+  border-radius: 10px;
+  margin: -20px 20px;
+  padding: 15px;
+  font-family: sans-serif, cursive;
+  font-weight: 700;
+  font-size: 15px;
+  color: darkslategrey;
+  background-color: rgba(219, 198, 235, 0.1);
+  transition: all 200ms ease-in-out;
+}
+.dateTime:hover {
+  background-color: rgb(233, 200, 228);
+}
+
+p {
+  padding: 10px 10px ;
+  font-family: sans-serif, cursive;
+  font-size: 15px;
+  text-align: center;
+}
+
+.futureWeather {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
 
