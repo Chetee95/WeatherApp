@@ -40,8 +40,8 @@ button:hover {
 .currentWeather {
   display: center;
   width: 380px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0 auto;
+  padding: 10px;
   border-radius: 10px;
   font-size: 20px;
   background-color: rgba(219, 198, 235, 0.1);
@@ -64,6 +64,10 @@ h1 {
   font-family: fantasy, cursive;
   font-size: 60px;
   color: darkslategrey;
+}
+
+h4 {
+  text-transform: capitalize;
 }
 
 .fa-sun {
@@ -129,4 +133,3 @@ p {
   padding: 0;
   border-radius: 10px;
 }
-
