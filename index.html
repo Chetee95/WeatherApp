@@ -27,33 +27,30 @@
   <body>
     <div class="container">
       
-      <form id="search-form">
       
-      <div class="row">
-        <div class="col-3">
+      <div class="row">   
           <section class="currentWeather">
             
-            <h2 id="city">West Fargo</h2>
-            <h1 id="temperature">36º </h1> 
+            <h2 id="city"></h2>
+            <h1 id="temperature"></h1> 
+
             <a href="#" id="celsius-link">Cº </a>| <a href="#" id="fahrenheit-link">Fº</a> 
       
-            <h4>
-              Snow Showers
-              <i class="fas fa-snowflake"></i>
-						</h4>
+            <h4 id="description"></h4>
             
-						
+            <form id="search-form">
             <input type="text" placeholder="Search Location" autocomplete="off" id="city-input"/>
             <input type="submit" value="Search" />
-    
+
             <hr/>
           </section>
         </form>
-        </div>
         <ul>
-          <li id="currentDay">Wednesday 20:13 </li>
+          <li id="currentDay"></li>
         </ul>
         <hr/>
+        <div class="row">
+          <div class="col-12">
           <section class="futureWeather">
 							<li >
                 Monday <br />
@@ -84,18 +81,15 @@
                 Saturday <br />
                 <i class="fas fa-cloud-sun"></i><br />50º
               </li>
-
-              <li>
-                Friday <br />
-                <i class="fas fa-cloud"></i><br />59º
-              </li>
             </ul>
           </section>
         </div>
+        </div>
+        </div>
     </div>
+    <a href="http://https://github.com/Chetee95/WeatherApp/edit/main/index.html">Coded by Chete A</a>
     <script src="src/index.js">
 
     </script>
   </body>
 </html>
-
