@@ -1,7 +1,13 @@
 let currentDate = document.querySelector("#currentDay");
 let currentTime = new Date();
 let hours = currentTime.getHours();
+if (hours < 10) {
+    hours = `0${hours}`
+}
 let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+    minutes = `0${minutes}`
+}
 
 let day = currentTime.getDay();
 let weekDay = [
@@ -9,14 +15,13 @@ let weekDay = [
     "Wednesday","Thursday","Friday",
     "Saturday"
 ];
-console.log(weekDay[day]);
 
 currentDate.innerHTML = `${weekDay[day]} ${hours}:${minutes}`;
 
 function showTemp (response) {
-    console.log(response.data.name);
     document.querySelector("#city").innerHTML = response.data.name; 
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
+    document.querySelector("#description").innerHTML = response.data.weather[0].description;
     }
 
 function search(event) {
@@ -27,6 +32,28 @@ function search(event) {
     axios.get(apiUrl).then(showTemp);
 }
 
+function showfahrenheitLink(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#fahrenheit-link");
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    tempElement.innerHTML = Math.round(tempElement);
+}
+
+function showCelsiusLink(event) {
+    event.preventDefault();
+    let tempElement = document.querySelector("#fahrenheit-link");
+    let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
+    tempElement.innerHTML = Math.round(tempElement);
+}
+
+let celsiusTemp = null;
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showfahrenheitLink);
+
+let celsiusLink = document.querySelector("#celsius-link");
+fahrenheitLink.addEventListener("click", showCelsiusLink);
 
