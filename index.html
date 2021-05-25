@@ -17,79 +17,67 @@
     </script>
     
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Wireframe</title>
+    <title>WeatherApp</title>
 
 
     <style>
     </style>
   </head>
-
   <body>
     <div class="container">
-      
-      
-      <div class="row">   
-          <section class="currentWeather">
-            
-            <h2 id="city"></h2>
-            <h1 id="temperature"></h1> 
-
-            <a href="#" id="celsius-link">Cº </a>| <a href="#" id="fahrenheit-link">Fº</a> 
-      
-            <h4 id="description"></h4>
-            
-            <form id="search-form">
-            <input type="text" placeholder="Search Location" autocomplete="off" id="city-input"/>
-            <input type="submit" value="Search" />
-
-            <hr/>
-          </section>
-        </form>
-        <ul>
-          <li id="currentDay"></li>
-        </ul>
-        <hr/>
-        <div class="row">
-          <div class="col-12">
-          <section class="futureWeather">
-							<li >
-                Monday <br />
-                <i class="fas fa-wind"></i><br />45º
-              </li>
-
-              <li>
-                Tuesday <br />
-                <i class="fas fa-sun"></i><br />50º
-              </li>
-
-              <li>
-                Wednesday <br />
-                <i class="fas fa-cloud"></i><br />50º
-              </li>
-
-              <li>
-                Thursday<br />
-                <i class="fas fa-cloud-sun"></i><br />46º
-              </li>
-
-              <li>
-                Friday <br />
-                <i class="fas fa-wind"></i><br />57º
-              </li>
-
-              <li>
-                Saturday <br />
-                <i class="fas fa-cloud-sun"></i><br />50º
-              </li>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Search Location.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
             </ul>
-          </section>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"> °F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> m/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        </div>
-        </div>
+        <small>
+          <a href="http://https://github.com/Chetee95/WeatherApp/edit/main/index.html">Coded by Chete A</a>
+        </small>
+      </div>
     </div>
-    <a href="https://github.com/Chetee95/WeatherApp">Coded by Chete A</a>
-    <script src="src/index.js">
-
-    </script>
+    <script src="src/index.js"></script>
   </body>
 </html>
