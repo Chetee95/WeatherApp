@@ -11,13 +11,13 @@ body {
   border-radius: 10px;
 }
 
-input {
-  border: 2px solid #aa67e0;
+ input {
+  border: 10px solid #aa67e0;
   border-radius: 10px;
   text-align: center;
   margin: 10px 0 10px 0;
 
-}
+} 
 
 button {
   border-radius: 55%;
@@ -33,22 +33,12 @@ button:hover {
   opacity: 1.5;
 }
 
-.col-3 {
-  padding: 90px;
-  max-height: 400px;
-}
-.currentWeather {
-  display: center;
-  width: 380px;
-  margin: 0 auto;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 20px;
-  background-color: rgba(219, 198, 235, 0.1);
+
+.col-6 {
+  font-family: fantasy, cursive;
+  font-size: 10px;
   color: darkslategrey;
-  font-family: sans-serif, cursive;
-  font-weight: 700;
-  transition: all 200ms ease-in-out;
+  text-align: left;
 }
 
 .currentWeather:hover {
@@ -60,9 +50,10 @@ h2 {
   font-size: 35px;
   color: darkslategrey;
 }
+
 h1 {
   font-family: fantasy, cursive;
-  font-size: 60px;
+  font-size: 40px;
   color: darkslategrey;
 }
 
@@ -70,10 +61,6 @@ h4 {
   text-transform: capitalize;
 }
 
-.fa-sun {
-  font-size: 20px;
-  color: darkslategrey;
-}
 
 ul {
   display: block;
@@ -99,9 +86,7 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-ul .fas {
-  font-size: 20px;
-}
+
 
 .dateTime {
   width: 250px;
@@ -120,16 +105,63 @@ ul .fas {
   background-color: rgb(233, 200, 228);
 }
 
-p {
-  padding: 10px 10px ;
-  font-family: sans-serif, cursive;
-  font-size: 15px;
-  text-align: center;
+li:first-letter {
+  text-transform: capitalize;
 }
 
-.futureWeather {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #dadde1;
   border-radius: 10px;
 }
+
+.overview {
+  margin-bottom: 10px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
